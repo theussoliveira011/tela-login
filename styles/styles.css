@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Mingzat&family=Montserrat:ital,wght@0,200;1,200&family=Raleway:ital,wght@0,200;1,200&display=swap');
+
+body {
+    margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login h1{
+    font: 3vw;
+    color: #77ffc0;
+    font-family: "Montserrat";
+}
+
+.left-login-image{
+    width: 35vw;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 1rem;
+    box-shadow: .2rem .2rem 40px #00000056;
+}
+
+.card-login h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+
+.textfield input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12px;
+    box-shadow: .2rem .2rem 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+.textfield label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+    font-family: "Montserrat";
+}
+
+.textfield input::placeholder{
+    color: #f0ffff94;
+}
+
+.button-login {
+    width: 100%;
+    padding: 16px 0px;
+    height: 3rem;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0.2rem 0.2rem 40px #00000056;
+    background-color: #00ff88;
+    margin-top: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    color: #2b134b;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login h1{
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-image{
+        width: 50vh;
+    }
+
+    .card-login{
+        width: 90%;
+    }
+}
